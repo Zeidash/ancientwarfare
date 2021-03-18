@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
     <title>Document</title>
 </head>
 
 <body>
     <div id="kontakt-container"
         style="height: 100%;width: 100%;display: flex; justify-content: center; align-items: center; z-index: 0; position: fixed;">
-        <div class="card" style="display: none;z-index: 9999;">
+        <div class="card" style="display: none;z-index: 9999; border: none; border-radius: 25px;">
             <div class="card-body">
                 <h5 class="card-title">Napište nám</h5>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Váš Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <small id="emailHelp" class="form-text text-muted">Váš email nebudeme nikomu sdílet.</small>
+                    <small id="emailHelp" class="form-text text-muted">Moje osobní stránky:.</small>
+                    <a href="https://zeidash.github.io/" target="blank"><small>https://zeidash.github.io/</small></a>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputText0">Předmět</label>
@@ -36,7 +37,7 @@
     </div>
 
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light row bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light row bg-light sticky-top" style="border-radius: 0; border: none;">
             <a class="navbar-brand" href="#">AncientWarfare</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,13 +45,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="composition.html">Rozložení armády</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="basic_strategy.html">Základní strategie</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -58,27 +59,164 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Cheese strategie
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="border-radius: 5px;">
                             <a class="dropdown-item" href="#">Kůň a luk</a>
                             <a class="dropdown-item" href="#">Spálená země a guerrilla warfare</a>
-                            <a class="dropdown-item" href="#">Lsti a klamy</a>
                         </div>
                     </li>
                 </ul>
                 <button type="button" class="btn btn-outline-primary ml-auto kontakt-button">Kontakt</button>
             </div>
         </nav>
+        <!-- Nadpis -->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0" style="background-color: #121212;">
+                <div class="container">
+                    <h1 class="display-3 text-light" style="text-align: center;">6 klasických manévrů v bitvě.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slabina -->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0">
+                <div class="container">
+                    <h1 class="display-4">Proražení slabiny</h1>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-right-0">
+                <img src="slabina.jpg" class="card-img-top" style="border-top-right-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Pokud si generál všimne nějaké slabiny u nepřítele, tedy neúplné linie nebo zmatku, může vzít svoje rezervy a zkusit jí prorazit se zdrcující převahou.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-left-0">
+                <img src="slabina_2.jpg" class="card-img-top" style="border-top-left-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Pokud druhá strana nezareaguje následky jsou fatální, jelikož se ostatní linie dostanou do pozice, kde bojují ze všech stran.
+                      <br>  Bitva u Chairóneie, 338 př.n.l
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pozice -->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0">
+                <div class="container">
+                    <h1 class="display-4">Defenzivní pozice</h1>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-12 border-right-0">
+                <img src="defensive_pos.jpg" class="card-img-top" style="border-top-right-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Snad nejjednodušší strategie je najít si dobrou defenzivní pozici. Většinou na kopci nebo před řekou, kde se dá udělat úzké místo pro obranu nebo opevnění. Opevnění má však smysl pouze když nepřítel musí, nebo jistě chce zaútočit(nemá jídlo, dochází peníze na platy vojáků, atd.)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Obalení -->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0">
+                <div class="container">
+                    <h1 class="display-4">Obklopení</h1>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-right-0">
+                <img src="envelopment.jpg" class="card-img-top" style="border-top-right-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Více než strategie je to směr bitvy. Vyhrávající strana se snaží obklíčit tu druhou, která se tomu snaží zabránit. Větší čísla nezaručují výhodu.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-left-0">
+                <img src="envelopment_2.jpg" class="card-img-top" style="border-top-left-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Bitva u Kann - Mnohonásobně menší armádě Hannibala Barkase se podařilo porazit Římskou armádu pomocí kavalérie a lehké pěchoty, která se schovávala v dlouhé trávě, a po chvíli je obklíčila.
+                      <br>  Bitva o Alesii - Římská kavalérie a pěchota obklíčila a pobila napadající galskou sílu, která je převyšovala početně v poměru přibližně 1:2. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Útok, nejde přeložit-->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0">
+                <div class="container">
+                    <h1 class="display-4">Oblique order</h1>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-right-0">
+                <img src="oblique_order.jpg" class="card-img-top" style="border-top-right-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Strategie je definována nasázením většiny své síly na jednu část(křídlo, střed). Zbytek armády pomalu postupuje a snaží se vyhnout boji. Pokud se povede, může zničit nepřátelská křídla a vyhrát bitvu. <br> Bitva u Leukter, 371 př.n.l.
+                    </p>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-left-0">
+                <img src="oblique_order_2.jpg" class="card-img-top" style="border-top-left-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">
+                        Nevýhoda je, že pokud nepřítel zaútočí rychle na slabší část, hrozí silnější části obklíčení.    
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Postup -->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0">
+                <div class="container">
+                    <h1 class="display-4">Nepřímý postup</h1>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-12 border-right-0" style="border: none;">
+                <img src="lake_trasimenegif.gif" class="card-img-top" style="border-top-right-radius: 0%; border: none;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Strategie spočívá v intrikování nepřítele. Většina armády se nachází v nějaké dobré přepadové pozici. Malá část armády se ukáže, udělá velmi široké linie a tím vypadá větší = nepřítel nečeká přepadení z křídel.
+                        Nevýhoda strategie je její risk, kdyby nepřítel odhalil, co se děje, mohl by svižně ukončit menší část armády, či přepadnout tu část větší.
+                       <br> Bitva u Trasimenského jezeram 217 př.n.l
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ústup -->
+        <div class="row justify-content-center">
+            <div class="jumbotron jumbotron-fluid col-12  mb-0">
+                <div class="container">
+                    <h1 class="display-4">Předstíraný ústup</h1>
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-right-0">
+                <img src="feigned_retreat.jpg" class="card-img-top" style="border-top-right-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Strategie je většinou použita jako odpověď na defenzivní pozici(Bitva u Hastings, 1066), útočná síla nechce útočit dlouhodobě v nevýhodě, takže zaútočí, a za chvíli se začně na oko nekontrolovaně stahovat.
+                </div>
+            </div>
+            <div class="card m-0 p-0 col-6 border-left-0">
+                <img src="feigned_retreat_2.jpg" class="card-img-top" style="border-top-left-radius: 0%;" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Když je generál přesvědčen, že zmizela výhoda obránce, jednotky se otočí a zaútočí. Nevýhoda strategie je, že se může stát, že jednotky začnou utíkat doopravdy(Bitva u Grunwaldu, 1430).
+                </div>
+            </div>
+        </div>
+
+        <!-- kladivo -->
         <div class="row justify-content-center">
             <div class="jumbotron jumbotron-fluid col-12  mb-0">
                 <div class="container">
                     <h1 class="display-4">Kladivo a kovadlina</h1>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
             <div class="card m-0 p-0 col-6 border-right-0">
-                <img src="hammer_anvil.jpg" class="card-img-top" style="border-top-right-radius: 0%;"
-                    alt="...">
+                <img src="hammer_anvil.jpg" class="card-img-top" style="border-top-right-radius: 0%;" alt="...">
                 <div class="card-body">
                     <p class="card-text">Strategie spočívá nejčastěji v kavalerii, která obejde nepřátelské linie.
                         Nepřátelské linii potom hrozí výpad kavalerie do zad a rychlý konec bitvy. Pro provedení je
@@ -86,14 +224,17 @@
                 </div>
             </div>
             <div class="card m-0 p-0 col-6 border-left-0">
-                <img src="hammer_anvil_2.jpg" class="card-img-top" style="border-top-left-radius: 0%;"
-                    alt="...">
+                <img src="hammer_anvil_2.jpg" class="card-img-top" style="border-top-left-radius: 0%;" alt="...">
                 <div class="card-body">
                     <p class="card-text">Pokud se nepřátelská linie nezlomí, kavalerie se stáhne zpět do zadu a zaútočí
-                        znovu.</p>
+                        znovu. Strategie se nepočítá do klasických manévrů, byla ale hodně často používána a není složitá.
+                       <br> Bitva u Zamy 202 př.n.l
+                    </p>
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
         <div class="row justify-content-center mt-0">
             <!-- Footer -->
             <footer class="p-0 text-center text-white col-12" style="background-color: #121212">

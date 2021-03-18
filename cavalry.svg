@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 87 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g id="cavalry" transform="matrix(6.12323e-17,1,-1,6.12323e-17,1034.32,-337.834)">
+        <g transform="matrix(1,0,0,1.01498,0,-15.3123)">
+            <rect x="337.834" y="949.321" width="57.537" height="84.747" style="fill:rgb(198,28,28);"/>
+            <path d="M395.371,949.321L337.834,949.321L337.834,1034.07L395.371,1034.07L395.371,949.321ZM343.898,1028.09L389.307,1028.09L389.307,955.296L343.898,955.296L343.898,1028.09Z"/>
+        </g>
+        <path d="M342.316,1027.55L389.957,956.326" style="fill:none;stroke:black;stroke-width:6.06px;"/>
+    </g>
+</svg>

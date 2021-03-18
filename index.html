@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
   <div id="kontakt-container" style="height: 100%;width: 100%;display: flex; justify-content: center; align-items: center; z-index: 0; position: fixed;">
-    <div class="card" style="display: none;z-index: 9999;">
+    <div class="card" style="display: none;z-index: 9999; border: none; border-radius: 25px;">
       <div class="card-body">
         <h5 class="card-title">Napište nám</h5>
         <div class="form-group">
@@ -20,7 +19,7 @@
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <small id="emailHelp" class="form-text text-muted">Váš email nebudeme nikomu sdílet.</small>
           <small id="emailHelp" class="form-text text-muted">Moje osobní stránky:.</small>
-          <a href="https://zeidash.github.io/index.html" target="blank"><small>https://zeidash.github.io/index.html</small></a>
+          <a href="https://zeidash.github.io/index.html" target="blank"><small>https://zeidash.github.io/</small></a>
         </div>
         <div class="form-group">
           <label for="exampleInputText0">Předmět</label>
@@ -38,7 +37,7 @@
   </div>
 
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light row bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light row bg-light sticky-top" style="border-radius: 0; border: none;">
       <a class="navbar-brand" href="#">AncientWarfare</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,10 +59,9 @@
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Cheese strategie
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="border-radius: 5px;">
               <a class="dropdown-item" href="#">Kůň a luk</a>
               <a class="dropdown-item" href="#">Spálená země a guerrilla warfare</a>
-              <a class="dropdown-item" href="#">Lsti a klamy</a>
             </div>
           </li>
         </ul>
@@ -96,7 +94,7 @@
             </div>
           </div>
           <div class="carousel-item" data-interval="5000">
-            <img src="hoplites.png" class="d-block w-100" alt="...">
+            <img src="hoplites.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block"
               style="background-color:rgba(0, 0, 0, 0.452); border-radius:100px">
               <h5>Zdi Sparty</h5>
